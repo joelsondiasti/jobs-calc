@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="functions.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/home.css" />
+    <title>JobsCalc</title>
+  </head>
+  <body>
+    <header id="principal">
+      <div id="menu" class="content">
+        <img id="logo" src="./img/logo.png" alt="" />
+        <p>Você tem 2 horas livres no seu dia</p>
+        <div id="profile">
+          <div>
+            <h1>Joelson Dias</h1>
+            <a href="./pages/profile.html"><span>Ver Perfil</span></a>
+          </div>
+          <img
+            src="https://avatars.githubusercontent.com/u/38875073?v=4"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div id="summary" class="content">
+        <div id="status">
+          <div class="status-item">
+            <h2 id="total">12</h2>
+            <span>projetos ao total</span>
+          </div>
+
+          <div class="status-item">
+            <h2>7</h2>
+            <span>em andamento</span>
+          </div>
+
+          <div class="status-item">
+            <h2>5</h2>
+            <span>encerrados</span>
+          </div>
+        </div>
+        <a href="./pages/newJob.html" id="newJob">
+          <i data-feather="plus"></i>
+          Adicionar novo Job
+        </a>
+      </div>
+    </header>
+
+    <table id="jobList" class="content">
+      <tr>
+        <td class="id">1</td>
+        <td class="name">Pizzaria Guloso</td>
+        <td class="info">Prazo <span>3 dias para entrega</span></td>
+        <td class="info">Valor <span>R$ 4.000,00</span></td>
+        <td class="status progress">Em andamento</td>
+        <td>
+          <button class="actButton">
+            <i data-feather="edit-3"></i>
+          </button>
+          <button class="actButton">
+            <i data-feather="trash"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="id">2</td>
+        <td class="name">Pruts Modas</td>
+        <td class="info">Prazo <span>6 dias para entrega</span></td>
+        <td class="info">Valor <span>R$ 7.000,00</span></td>
+        <td class="status wait">Aguardando</td>
+        <td>
+          <button class="actButton">
+            <i data-feather="edit-3"></i>
+          </button>
+          <button class="actButton">
+            <i data-feather="trash"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="id">3</td>
+        <td class="name">Pizzaria Guloso</td>
+        <td class="info">Prazo <span>3 dias para entrega</span></td>
+        <td class="info">Valor <span>R$ 4.000,00</span></td>
+        <td class="status finish">Finalizado</td>
+        <td>
+          <button class="actButton">
+            <i data-feather="edit-3"></i>
+          </button>
+          <button class="actButton">
+            <i data-feather="trash"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="id">4</td>
+        <td class="name">Pizzaria Guloso</td>
+        <td class="info">Prazo <span>3 dias para entrega</span></td>
+        <td class="info">Valor <span>R$ 4.000,00</span></td>
+        <td class="status pendent">Pendente</td>
+        <td>
+          <button class="actButton">
+            <i data-feather="edit-3"></i>
+          </button>
+          <button class="actButton">
+            <i data-feather="trash"></i>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

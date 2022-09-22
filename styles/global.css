@@ -1,0 +1,50 @@
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --white: #fff;
+  
+    --gray-50: #f0f2f5;
+    --gray-100: #e1e3e5;
+    --gray-200: #fcfdff;
+    --gray-300: #bfbfcc;
+    --gray-400: #787880;
+    --gray-500: #5a5a66;
+    --gray-550: #4f4f5b;
+    --gray-600: #41414c;
+  
+    --gray-300-o16: #fcfdff29;
+    --orange-100: #fce5cb;
+    --orange-400: #f7a241;
+    --orange-500: #f1972c;
+  
+    --purple-500: #5c45a8;
+  
+    --red-100: #fabebc;
+    --red-500: #eb3b35;
+  
+    --blue-100: #c9cbf8;
+    --blue-500: #050eaf;
+  
+    --green-100: #e8f8e8;
+    --green-500: #36b236;
+  }
+  
+  html,
+  body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", sans-serif;
+    background-color: var(--gray-100);
+  }
+
+  .content {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
